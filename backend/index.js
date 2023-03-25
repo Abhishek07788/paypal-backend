@@ -16,11 +16,12 @@ app.use("/user", UserRouter);
 app.use("/sprint", sprintRouter);
 app.use("/task", taskRouter);
 
-app.use("/", (req, res) => {
-  res.send("Hello Paypal");
+
+app.get("/", (req, res) => {
+  res.send("<h1>Welcome to PayPal Backend</h1>");
 });
 
 app.listen(PORT || 8080, async () => {
   await dbConnect();
-  console.log(`Listening on http://localhost:${PORT}`);
+  console.log(`Started at: http://localhost:${PORT}`);
 });
