@@ -17,7 +17,7 @@ app.use("/sprint", sprintRouter);
 app.use("/task", taskRouter);
 
 app.use("/", (req, res) => {
-  res.send("Hello KGS This the backend");
+  res.send("Hello Paypal");
 });
 
 app.listen(PORT || 8080, async () => {

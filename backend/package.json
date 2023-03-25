@@ -1,14 +1,22 @@
 {
-  "name": "backend",
+  "name": "kgs-assignment-",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishek07788/KGS-Assignment-.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhishek07788/KGS-Assignment-/issues"
+  },
+  "homepage": "https://github.com/Abhishek07788/KGS-Assignment-#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
