@@ -5,6 +5,8 @@ const dbConnect = require("./config/db");
 const UserRouter = require("./Routes/user.routes");
 const sprintRouter = require("./Routes/sprint.routes");
 const taskRouter = require("./Routes/tasks.routes");
+const bugsRouter = require("./Routes/bugs.routes");
+
 
 dotenv.config();
 let PORT = process.env.PORT || 8080;
@@ -15,6 +17,8 @@ app.use(express.json());
 app.use("/user", UserRouter);
 app.use("/sprint", sprintRouter);
 app.use("/task", taskRouter);
+app.use("/bugs", bugsRouter);
+
 
 
 app.get("/", (req, res) => {
